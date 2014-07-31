@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.11
+FROM phusion/baseimage:0.9.12
 MAINTAINER Brant Fitzsimmons <brant.fitzsimmons@gmail.com>
 
 # Set correct environment variables.
