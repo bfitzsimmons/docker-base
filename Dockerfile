@@ -37,7 +37,7 @@ RUN apt-get -qqy install vim
 RUN apt-get -qqy install wget
 RUN apt-get -qqy install dnsutils
 
-# # Install and configure dnsmasq.
+# Install and configure dnsmasq.
 RUN apt-get -qqy install dnsmasq
 ADD /etc/dnsmasq.conf /etc/dnsmasq.conf
 ADD /etc/dhosts /etc/dhosts
