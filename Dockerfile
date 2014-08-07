@@ -10,6 +10,7 @@ CMD ["/sbin/my_init"]
 ENV DEBIAN_FRONTEND noninteractive
 
 # Update the system.
+RUN echo "Acquire::http::Proxy \"http://172.17.42.1:3142\";" | tee /etc/apt/apt.conf.d/01proxy
 RUN apt-get -qq update
 RUN apt-get -qqy install aptitude
 RUN aptitude -q=2 -y safe-upgrade
